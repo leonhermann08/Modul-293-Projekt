@@ -1,0 +1,245 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f5f5f5;
+    color: black;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Navigation Header */
+.navbar {
+    background-color: #b3b3b3;
+    padding: 10px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    height: 140px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.logo img {
+    height: 120px;
+    width: auto;
+    object-fit: contain;
+}
+
+.nav-links {
+    display: flex;
+    gap: 30px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: 16px;
+    padding: 8px 16px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+    border-bottom: 3px solid black;
+    background-color: transparent;
+}
+
+/* Main Content */
+.about-content {
+    flex: 1;
+    padding: 60px 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.about-content h1 {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.about-container {
+    display: flex;
+    gap: 60px;
+    align-items: flex-start;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.photo-section {
+    flex: 0 0 auto;
+    display: flex;
+    justify-content: center;
+}
+
+.photo-placeholder {
+    width: 320px;
+    height: 400px;
+    background-color: #d0d0d0;
+    border: 3px solid #999;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    color: #666;
+    background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 400"><rect width="320" height="400" fill="%23d0d0d0"/><text x="160" y="210" text-anchor="middle" font-family="Arial" font-size="18" fill="%23666">Foto wird geladen...</text></svg>');
+    background-size: cover;
+    background-position: center;
+}
+
+.text-section {
+    flex: 1;
+    max-width: 600px;
+    min-width: 300px;
+}
+
+.text-section p {
+    font-size: 16px;
+    line-height: 1.6;
+    text-align: justify;
+    margin-bottom: 20px;
+}
+
+/* Footer */
+.footer {
+    background-color: #b3b3b3;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 40px;
+}
+
+.social-section {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.social-icons {
+    display: flex;
+    gap: 15px;
+}
+
+.social-icons a {
+    color: black;
+    font-size: 24px;
+    transition: transform 0.3s ease;
+}
+
+.social-icons a:hover {
+    transform: scale(1.2);
+}
+
+.social-links span {
+    font-size: 12px;
+    color: #333;
+    white-space: nowrap;
+}
+
+.contact-info {
+    flex: 1;
+    text-align: center;
+}
+
+.contact-info p {
+    margin-bottom: 3px;
+    font-size: 14px;
+    line-height: 1.3;
+}
+
+.copyright {
+    flex: 1;
+    text-align: right;
+}
+
+.copyright p {
+    font-size: 12px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        gap: 15px;
+        padding: 20px;
+        height: auto;
+    }
+
+    .nav-links {
+        gap: 20px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .about-content {
+        padding: 40px 20px;
+    }
+
+    .about-content h1 {
+        font-size: 28px;
+        margin-bottom: 30px;
+    }
+
+    .about-container {
+        flex-direction: column;
+        gap: 30px;
+        align-items: center;
+    }
+
+    .photo-placeholder {
+        width: 280px;
+        height: 350px;
+    }
+
+    .text-section {
+        max-width: 100%;
+    }
+
+    .footer {
+        flex-direction: column;
+        text-align: center;
+        gap: 25px;
+        align-items: center;
+    }
+
+    .social-section {
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+    }
+
+    .copyright {
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .nav-links a {
+        font-size: 14px;
+        padding: 6px 12px;
+    }
+
+    .photo-placeholder {
+        width: 250px;
+        height: 320px;
+    }
+}

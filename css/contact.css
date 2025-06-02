@@ -1,0 +1,245 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f5f5f5;
+  color: black;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Navigation Header */
+.navbar {
+  background-color: #b3b3b3;
+  padding: 10px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  height: 140px; /* Navbar höher für das größere Logo */
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+.logo img {
+  height: 120px; /* Logo deutlich größer */
+  width: auto;
+  object-fit: contain;
+}
+
+.nav-links {
+  display: flex;
+  gap: 30px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  font-size: 16px;
+  padding: 8px 16px;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+  border-bottom: 3px solid black;
+  background-color: transparent;
+}
+
+/* Main Content */
+.main-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 80px 20px; /* Mehr Padding oben/unten */
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.main-content h1 {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 50px; /* Mehr Abstand */
+  text-align: center;
+}
+
+/* Contact Form */
+.contact-form {
+  width: 100%;
+  max-width: 500px; /* Etwas breiter */
+  display: flex;
+  flex-direction: column;
+  gap: 15px; /* Weniger Abstand zwischen Feldern */
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 15px 20px;
+  border: none;
+  border-radius: 25px;
+  background-color: #b3b3b3;
+  font-size: 16px;
+  font-family: inherit;
+  outline: none;
+  transition: background-color 0.3s ease;
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+  color: #333;
+  font-weight: 500;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  background-color: #a0a0a0;
+}
+
+.contact-form textarea {
+  border-radius: 20px;
+  resize: vertical;
+  min-height: 120px;
+}
+
+.contact-form button {
+  padding: 12px 30px;
+  border: none;
+  border-radius: 25px;
+  background-color: #888;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  align-self: flex-start;
+  margin-top: 10px;
+}
+
+.contact-form button:hover {
+  background-color: #666;
+}
+
+/* Footer */
+.footer {
+  background-color: #b3b3b3;
+  padding: 20px 40px; /* Weniger Padding */
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start; /* Oben ausgerichtet wie im Bild */
+  gap: 40px;
+}
+
+.social-section {
+  flex: 1;
+  display: flex;
+  flex-direction: column; /* Icons und Text untereinander */
+  align-items: flex-start;
+  gap: 10px; /* Weniger Abstand zwischen Icons und Text */
+}
+
+.social-icons {
+  display: flex;
+  gap: 15px;
+}
+
+.social-icons a {
+  color: black;
+  font-size: 24px;
+  transition: transform 0.3s ease;
+}
+
+.social-icons a:hover {
+  transform: scale(1.2);
+}
+
+.social-links span {
+  font-size: 12px;
+  color: #333;
+  white-space: nowrap;
+}
+
+.contact-info {
+  flex: 1;
+  text-align: center;
+}
+
+.contact-info p {
+  margin-bottom: 3px; /* Weniger Abstand zwischen Zeilen */
+  font-size: 14px;
+  line-height: 1.3; /* Kompaktere Zeilenhöhe */
+}
+
+.copyright {
+  flex: 1;
+  text-align: right;
+}
+
+.copyright p {
+  font-size: 12px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    gap: 15px;
+    padding: 20px;
+    height: auto;
+  }
+
+  .nav-links {
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .main-content {
+    padding: 40px 20px;
+  }
+
+  .main-content h1 {
+    font-size: 28px;
+    margin-bottom: 30px;
+  }
+
+  .footer {
+    flex-direction: column;
+    text-align: center;
+    gap: 25px;
+    align-items: center;
+  }
+
+  .social-section {
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+  }
+
+  .copyright {
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .contact-form {
+    max-width: 100%;
+  }
+
+  .nav-links a {
+    font-size: 14px;
+    padding: 6px 12px;
+  }
+}
