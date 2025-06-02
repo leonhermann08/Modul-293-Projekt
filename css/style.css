@@ -25,7 +25,7 @@ body {
 }
 
 .side-logo img {
-  height: 250px; 
+  height: 250px;
   width: auto;
 }
 
@@ -121,32 +121,32 @@ footer {
 @media (max-width: 768px) {
   .main-content {
     flex-direction: column;
-    gap: 20px; 
+    gap: 20px;
     text-align: center;
   }
-  
+
   .side-logo img {
     height: 150px;
   }
-  
+
   .text-block {
-    margin-left: 0; 
+    margin-left: 0;
   }
-  
+
   .text-block h1 {
     font-size: 36px;
   }
-  
+
   .text-block p {
     font-size: 20px;
   }
-  
+
   footer {
     flex-direction: column;
     gap: 20px;
     text-align: center;
   }
-  
+
   .footer-nav {
     gap: 25px;
   }
