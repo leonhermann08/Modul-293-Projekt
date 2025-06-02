@@ -13,7 +13,6 @@ body {
     flex-direction: column;
 }
 
-/* Navigation Header */
 .navbar {
     background-color: #b3b3b3;
     padding: 10px 40px;
@@ -57,7 +56,6 @@ body {
     background-color: transparent;
 }
 
-/* Main Content */
 .skills-content {
     flex: 1;
     padding: 60px 40px;
@@ -183,7 +181,6 @@ body {
     font-size: 12px;
 }
 
-/* Responsive Design */
 @media (max-width: 768px) {
     .navbar {
         flex-direction: column;

@@ -13,7 +13,6 @@ body {
     flex-direction: column;
 }
 
-/* Navigation Header */
 .navbar {
     background-color: #b3b3b3;
     padding: 10px 40px;
@@ -57,7 +56,6 @@ body {
     background-color: transparent;
 }
 
-/* Main Content */
 .about-content {
     flex: 1;
     padding: 60px 40px;
@@ -103,7 +101,6 @@ body {
     background-position: center;
 }
 
-/* Styling für das Bild innerhalb der photo-placeholder */
 .photo-placeholder img {
     width: 100%;
     height: 100%;
